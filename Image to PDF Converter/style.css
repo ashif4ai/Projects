@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 800px;
+    margin: 10px auto;
+    height: 90vh;
+    background: #e4f7ff;
+    /* border: 2px solid tomato; */
+    padding: 25px 10px;
+    border-radius: 10px;
+
+}
+.custom-file-upload {
+        display: block;
+        max-width: 820px;
+        margin: auto;
+        background-color: #03A9F4;
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+
+}
+input[type="file"] {
+    display: none;
+}
+.label{
+    width: 153px;
+    margin: 40px auto;
+    padding: 12px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    color: #03A9F4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+
+}
+.btn{
+    display: block;
+
+    outline: none;
+    width: 189px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #03A9F4;
+    background-color: #03A9F4;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+
+}
+.note{
+    max-width: 820px;
+
+    background: #04ff001f;
+    padding: 5px;
+    background: #04ff001f;
+    padding: 5px;
+    color: #276d2a;
+    font-size: 16px;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+.step{
+    padding: 9px 20px;
+}
+.info h1{
+    text-align: center;
+    font-size: 52px;
+    color: #03a9f4;
+}
+.info span{
+    color: red;
+}
+#wait{
+
+    color: #F44336;
+    font-size: 51px;
+    margin: 13px 5px;
+}
