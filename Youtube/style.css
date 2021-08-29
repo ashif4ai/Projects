@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: rgb(255, 243, 226);
+    background-image: url("https://images.freeimages.com/images/large-previews/6d5/lake-at-the-cottage-1372381.jpg");
+}
+.header{
+    margin: 2px 2px;
+    border-radius: 25px;
+}
+.nav{
+width:  514px;
+margin:  auto;
+position: relative;
+top:-53px;
+
+overflow: auto;
+}
+a{
+    float: left;
+    width: 106px;
+    margin: 4px 7px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 0;
+    font-weight: 600;
+    
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.897);
+
+}
+
+li{
+    list-style:none;
+}
+
+.logo{
+    width: 120px;
+display: inline-block;
+margin:7px 12px;
+
+}
+.btn1{
+float: right;
+display: inline-block;
+position: relative;
+top:-88px;
+
+}
+.btn{
+    margin: 0px 7px;
+    padding: 5px 10px;
+    width:80px;
+    background-color: chocolate;
+    color: white;
+    font-weight: 500;
+    border-color: white;
+    border-radius: 15px;
+}
+h1{
+    margin: 140px auto 0px auto;
+    font-size: 64px;
+    color: #ec2828;
+    text-align: center;
+    background: white;
+    width: fit-content;
+    padding: 20px 29px;
+    border-radius: 10px;
+}
+.btn-main{
+    font-size: 20px;
+    padding: 17px 14px;
+    border-radius: 10px;
+    margin: 28px auto;
+    display: block;
+    border: 0;
+    background: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
