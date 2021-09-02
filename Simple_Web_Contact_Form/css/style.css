@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    --color-primary: #ff541f;
+    --color-dark: rgb(12, 12, 12);
+    --color-light:rgb(43, 43, 43);
+}
+body{
+    background-color: rgb(239 239 239);
+}
+
+/* Form Section */
+section{
+    margin: 20px auto 0 auto;
+    max-width: 480px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Header */
+.header{
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--color-primary);
+}
+
+/* Discription */
+.disc{
+    text-align: center;
+    color: var(--color-light);
+    font-size: 20px;
+    margin: 8px;
+}
+.form{  
+    margin: 35px auto 0 auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Input Group */
+.input-group{
+    width: 100%;
+    margin: 6px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input,.label{
+    display: block;
+    font-size: 16px;
+    
+}
+/* Label */
+.label{
+    font-weight: 600;
+    flex: 1 1 150px;
+}
+/* Input Fileds */
+.input{
+    padding: 3px 8px;
+    border: 0;
+    margin-left: 2px;
+    border-bottom: 1px solid var(--color-light);
+    flex: 1 1 250px;
+}
+#userComment{
+    border: 1px solid var(--color-light);
+    height: 50px;
+}
+/* Group of Buttons */
+.btn-group{
+    display: flex;
+    align-items: center;
+    margin: 20px auto 10px auto;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Primary Button */
+.btn{
+    padding: 5px 10px;
+    width: 200px;
+    background: var(--color-primary);
+    color: white;
+    border: 0;
+    font-size: 20px;
+    border-radius: 15px;
+}
+/* Confirmation Page */
+.confirmation-page .input{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-dark);
+    background: none;
+    border: 0 !important;
+}
+#icon-success{
+    margin: auto;
+    display: block;
+    width: 70px;
+}
