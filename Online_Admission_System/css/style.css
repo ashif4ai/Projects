@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    --color-primary:#0061D2;
+    --color-bg: rgb(243, 243, 243);
+    --color-gray: #5d5d5d;
+    clear: both;
+}
+
+body{
+    background-color:var(--color-bg);
+}
+
+.main{
+    max-width: 700px;
+    /* min-width: 380px; */
+    margin: 30px auto 0px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    min-height: 475px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
+
+.nav-item{
+    font-size: 18px;
+    padding: 0 0 5px 0;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    color: var(--color-primary);
+    font-weight: 600;
+    border-bottom: 2px solid;
+}
+.header-primary{
+    text-align: center;
+    color: var(--color-primary);
+    margin: 17px 0 10px 0;
+}
+.disc{
+    text-align: center;
+    color: var(--color-gray);
+    margin: 0 0 40px 0;
+}
+.icon{
+    width: 33px;
+}
+.input-group{
+    margin: 0px 0px 18px 0;
+}
+.input-group .upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-group input,.input-group select{
+    width: 90%;
+    font-size: 18px;
+    padding: 5px 10px 0px 10px;
+    border: 0;
+}
+.hr-line{
+    margin-top: 9px;
+}
+.btn-primary{
+    text-align: center;
+    cursor: pointer;
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+    padding: 9px 5px;
+    border: 0;
+    background: var(--color-primary);
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* User > Dashboard */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.menu-item{
+    margin: 8px;
+    background: #0087D2;
+    border-radius: 17px;
+    width: 140px;
+    height: 140px;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+}
+.menu-item:hover{
+    opacity: 0.8;
+}
+.menu-item strong{
+    color: white;
+    width: 57px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 49px;
+}
+.color-1{
+    background: #0087D2;
+}
+.color-2{
+    background: #00D26D;
+}
+.color-3{
+    background: #B500D2;
+}
+.color-4{
+    background: #CED200;
+}
+/* User > Progress-1 */
+.progress{
+    background-color: #ffd600b0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 4px;
+}
+.progress strong{
+    color: white;
+}
+.label-text{
+    margin: 20px 0px 6px 0px;
+    height: 25px;
+    background-color: var(--color-primary);
+    width: fit-content;
+    padding: 3px 3px 3px 3px;
+    font-size: 16px;
+    color: white;
+    /* font-weight: 600; */
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    position: relative;
+    left: -30px;
+}
+.token-1{
+
+    padding-left: 38px !important;
+}
+/* On screens that are 480px or less, set the background color to olive */
+@media screen and (max-width: 480px) {
+    .main{
+    border-radius: 33px;
+    margin: 8px auto 0px auto;
+    }
+    .btn-primary{
+        position: fixed !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .token-1{
+        padding-left: 10px !important;
+    }
+    .header-primary{
+        font-size: 26px;
+    }
+    .menu-item{
+        width: 130px;
+        height: 135px;
+        padding: 20px 5px;
+    }
+    
+}
+.inline{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.inline > .input-group{
+    width: 48%;
+}
+.display-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display-group .filled-data{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Main Landing Page */
+.landing-box{
+    background: var(--color-primary);
+    max-width: 300px;
+    margin: 10px auto 10px auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.landing-box h1{
+    font-size: 30px;
+    color: white;
+    max-width: 235px;
+    margin: 10px auto;
+}
+.btn{
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 26px;
+    margin: 5px 10px;
+    color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-lg{
+    background: #004ba2;
+    color: white;
+    font-weight: 800;
+}
+
+
+.success-img{
+    margin: auto;
+    display: block;
+    margin-top: 29px;
+}
+input,select{
+    background:none;border:none; -webkit-appearance:none"
+}
+
+/* Check Status Page */
+.custom-1{
+    display: block;
+    background-color: #c4c4c414;
+    /* width: fit-content; */
+    padding: 10px;
+    border-radius: 7px;
+    margin: auto;
+
+    
+}
+.dis-group{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+.dis-group > div{
+    width: 50%;
+}
+.dis-group .label-data{
+    font-weight: bold;
+}
+.btn-sm{
+    color: var(--color-primary);
+    font-size: 18px;
+    background: no-repeat;
+    border: 2px solid var(--color-primary);
+    /* text-align: right; */
+    float: right;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+/*My Accout Page*/
+.profile-logo{
+    background-color: #ffd600;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 35px auto 10px auto;
+    color: white;
+    font-size: 77px;
+    font-weight: 900;
+}
+.header-secondary{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+/*Help and Support Page*/
+.help-group{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.help-group img{
+    width: 69px;
+}
+.help-group .left{
+    width: 70px;
+    text-align: center;
+}
+.help-group .right{
+    text-align: center;
+    width: 200px;
+}
+hr{
+    margin: 20px auto;
+}
+.hide{
+    display: none;
+}
+/*Status _Page*/
+.color-pending{
+    color: yellow;
+}
+.color-accepted{
+    color: green;
+}
+.color-rejected{
+    color: red;
+}
+form .error {
+    color: red;
+  }
+.home-btn{
+    margin-left: 6px;
+}
+.home-btn img{
+    width: 50px;
+}

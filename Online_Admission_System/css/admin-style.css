@@ -1,0 +1,169 @@
+.number-label{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px 6px 3px 6px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 7px;
+    width: 55px;
+    color: white;
+}
+.menu-item{
+    padding: 40px 5px;
+}
+.main{
+    padding: 10px 5px;
+
+}
+.application-list{
+    margin-top: 15px;
+}
+.menu-item:nth-child(1) .number-label{
+        background-color: #0061d2;
+}
+.menu-item:nth-child(2) .number-label{
+        background-color: #16C107;
+}
+.menu-item:nth-child(3) .number-label{
+        background-color: #9B0101;
+}
+
+.menu-item:nth-child(1){
+    background-color: #0087D2;
+}
+.menu-item:nth-child(2){
+    background-color: #00D26D;
+}
+.menu-item:nth-child(3){
+    background-color: #D20000;
+}
+.menu-item:nth-child(4){
+    background-color: #CED200;
+}
+.menu-item div:nth-child(2){
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.menu-item div:nth-child(3){
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+.application-min-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px;
+    max-width: 380px;
+    background: #FFFFFF;
+    border: 1px solid rgba(196, 196, 196, 0.1);
+    box-sizing: border-box;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    margin: 20px auto;
+    cursor: pointer;
+
+}
+
+.application-min-card hr{
+    margin: 3px auto;
+}
+.application-min-card .reg-id{
+    color: white;
+    padding: 3px 10px;
+    border-top-left-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    min-width: 135px;
+    text-align: center;
+    margin: 9px 5px;
+}
+.application-min-card .reg-date{
+    margin: 4px 5px;  
+    font-size: 14px;  
+    color: #5d5d5d;  
+
+}
+.application-min-card .reg-name{
+    text-align: right;
+    font-size: 24px;
+    margin: 5px 5px; 
+    font-weight: 700;
+    color: #5d5d5d;  
+}
+.application-min-card .reg-course{
+    font-size: 10px;
+    margin: 5px 0px;
+    color: #5d5d5d;  
+
+}
+.card{
+    display: block;
+    padding: 10px 30px;
+    cursor: default;
+}
+.bg-effect{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: white;
+    display: none;
+}
+.confirmation-card{
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 5%;
+}
+.confirmation-card button{
+
+}
+.confirmation-card img{
+    width: 54px;
+}
+.confirmation-card textarea{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.confirmation-card .btn-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+.confirmation-card label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 1px 5px;
+    cursor: pointer;
+}
+#accepted, #rejected{
+    opacity: 0;
+}
+.custom-btn input:checked ~ .checked {
+    border: 1px solid #0061d2a6;
+    border-radius: 6px;
+    box-shadow: #0061d296 2px 2px 1px;
+}
+.custom-btn input:checked ~ .checked span {
+    color: var(--color-primary);
+}
+
+.confirmation-card .remark{
+    text-align: left;
+    margin: 15px 0px;
+}
