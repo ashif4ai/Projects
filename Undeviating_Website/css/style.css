@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+   font-family: 'Questrial', sans-serif;
+}
+header{
+    background-color: #2056ac;
+    /* height: 400px; */
+    color: white;
+}
+.logo{
+    padding-top: 75px;
+    text-align: center;
+}
+.logo h1{
+    font-size: 54px;
+}
+.logo img{
+    width: 60px;
+    display: block;
+    margin: 10px auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.nav-item{
+    font-size: 14px;
+    padding: 23px 24px;
+    margin: 0px 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 600;
+}
+.nav-item:hover{
+    color:#2056ac;
+    background: white;
+    cursor: pointer;
+}
+.main img{
+    display: block  ;
+    margin: 75px auto;
+    width: 80%;
+}
+.header-primary{
+    text-align: center;
+    margin: 50px auto;
+    color: gray;
+    font-size: 40px;
+}
+.second p{
+    width: 58%;
+    margin: auto;
+    color: gray;
+    line-height: 25px;
+    text-align: center;
+}
+.divider{
+    margin: 50px 0;
+}
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.group .item{
+    width: 340px;
+    margin: 0px 20px;
+    text-align: center;;
+}
+.discription{
+    line-height: 27px;
+    font-size: 14px;
+    color: rgba(0,0,0,.7);
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+.header-secondary{
+    font-size: 26px;
+    margin: 20px 0;
+    color: #404040;
+}
+.text-shadow{
+    line-height: 24px;
+    color: rgb(0,0,0,0.6);
+    margin: 10px 0;
+}
+.btn{
+    margin: 10px 0;
+    /* width: 100px; */
+    padding: 15px 40px;
+    text-align: center;
+    border: 0;
+    background: #64ABD1;
+    color: white;
+    cursor:pointer;
+}
+
+/* Contact area */
+.contact{
+    background: #E3F0F7;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #404040;
+}
+.item > img{
+    width: 50px;
+    margin-bottom: 40px;
+}
+/* Footer area */
+.footer{
+    background: #2056ac;
+    padding: 70px 0;
+    text-align: center;
+    color: #d4d4d4;
+}
+.footer-group img {
+    width: 40px;
+    padding: 8px;
+    cursor:pointer;
+}
+.footer-group{
+    margin: auto;
+    margin-top: 34px;
+    background: #ffffffe0;
+    width: 202px;
+    border-radius: 30px;
+    padding-top: 2px;
+}
