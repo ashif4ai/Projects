@@ -22,14 +22,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](/screenshot/1.png)
+![](./screenshot/1.png)
 
-![](/screenshot/2.png)
+![](./screenshot/2.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://code.ashif.in/projects/Order_summary_componenthttps://your-live-site-url.com)
+- Live Site URL: [Click here](https://code.ashif.in/Projects/Order_summary_component/)
 
 ## My process
 
