@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 22px;
+}
+.card{
+    max-width: 450px;
+    margin: 100px auto;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 5px 10px #0000000f;
+}
+#image__hero{
+    border-top-left-radius : 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+.details{
+    padding: 45px 45px 35px 45px;
+}
+.header__primary{
+color: hsl(225, 100%, 94%);
+color: hsl(245, 75%, 52%);
+color: hsl(225, 100%, 98%);
+color: hsl(224, 23%, 55%);
+color: hsl(223, 47%, 23%); 
+
+color: hsl(223, 47%, 23%);
+margin: 5px 0 23px 0;
+}
+
+.plan__disc{
+    color: hsl(224, 23%, 55%);
+    max-width: 300px;
+    margin: 0 auto 23px auto;
+}
+.plan__details{
+   
+    width: 100%;
+    margin: auto;
+    padding: 23px;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#plan__icon{
+    margin-right: 23px;
+}
+.btn__change{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+.button_primary{
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin: 25px auto;
+    max-width: 350px;
+    border: 0;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.button__light{
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    text-decoration: mintcream;
+}
+a:hover{
+    opacity: 0.7;
+    transition: 0.2s ease-out;
+}
+
+/*Media Query*/
+@media screen and (max-width: 376px) {
+   .details{
+       padding: 20px;
+   }
+   .plan__details{
+    padding: 15px;
+    min-width: 260px;
+   }
+   #plan__icon{
+    margin-right: 18px;
+    }
+    body{
+        background-image: url('/images/pattern-background-mobile.svg');
+    }
+
+  }
