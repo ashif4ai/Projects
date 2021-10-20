@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #605959;
+
+}
+body{
+    color: black;
+    /* background-color: #a34ff1; */
+    background-color: rgb(238, 238, 238);
+}
+section{
+    /* background: linear-gradient(191.87deg, rgba(127, 27, 220, 0.69) 1.62%, #AA4FFF 57.47%, rgba(155, 81, 224, 0.62) 99.98%, #C188F5 100%); */
+    max-width: 400px;
+    margin: auto;
+    padding: 10px 20px;
+    position: static;
+    background-color: white;
+    height: 100vh;
+    display: none;
+}
+.activeNow{
+    display: block;
+}
+/* Primary Header */
+.header__primary{
+    font-size: 35px;
+    color: #605959;
+
+}
+.btn__primary{
+    box-shadow: 3px 3px 5px #959595d6;
+    width: 90%;
+    max-width: 350px;
+    background: #000000bf;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    border: 0;
+    /* background-color: #8400FF; */
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+}
+.selected{
+    border: 2px solid rgba(58, 58, 58, 0.582) !important;
+}
+.border{
+    border: 0.5px solid #837777;
+    border-style: dashed;
+    width: 80%;
+}
+li{
+    list-style: none;
+}
+.disabled{
+    pointer-events: none;
+}
+.hide{
+    display: none;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }

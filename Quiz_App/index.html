@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="css/utills.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Baloo Bhai 2 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body class="noselect">
+    
+    <!-- Main Section -->
+    <section class="home activeNow">
+        <!-- Primary Header -->
+        <h1 class="header__primary header">Welcome to</h1>
+
+        <!-- APP Logo -->
+        <img src="static/img/Logo.png" alt="QUIZ APP" class="quiz__logo">
+
+        <!-- Features and Rules -->
+        <div class="info__box">
+            <h2 class="info__title">Features</h2>
+            <ul>
+                <li>Random QUestions Each time</li>
+                <li>Option to choose favourit Category</li>
+                <li>Option to choose Difficult Level</li>
+            </ul>
+
+            <h2 class="info__title">Rules</h2>
+            <ul>
+                <li>10 Questions to attempt</li>
+                <li>15 Seconds for each question</li>
+            </ul>
+        </div>
+
+        <!-- Primary BUtton -->
+        <button class="btn__primary" id="goButton">Let's GO</button>
+
+    </section>
+
+    <!-- Quiz Customize Section -->
+    <section class="quiz__option">
+        
+        <!-- Category List -->
+
+        <h1 class="header__primary header">Category</h1>
+
+       <div class="category__list">
+           <div class="quiz__category" onclick="quizCat(this,9)">
+               <img src="static/icons/gk.png" alt="gk">
+               <div>G. K.</div>
+           </div>
+
+           <div class="quiz__category" onclick="quizCat(this,18)">
+               <img src="static/icons/computer.png" alt="computer">
+               <div>Computer</div>
+            </div> 
+
+            <div class="quiz__category" onclick="quizCat(this,23)">
+                <img src="static/icons/history.png" alt="History">
+                <div>History</div>
+            </div>
+            <div class="quiz__category" onclick="quizCat(this,21)">
+                <img src="static/icons/sport.png" alt="sports">
+                <div>Sports</div>
+            </div>
+       </div>
+
+       <!-- Difficulty List -->
+
+       <h1 class="header__primary">Difficulty Level</h1>
+
+       <div class="difficulty__list">
+            <div class="diff__level" onclick="diffLevel(this,'easy')">Easy</div>
+            <div class="diff__level" onclick="diffLevel(this,'medium')">Medium</div>
+            <div class="diff__level" onclick="diffLevel(this,'hard')">Hard</div>
+       </div>
+
+
+        <!-- Primary BUtton -->
+        <button class="btn__primary hide" id="startQuiz">Start Quiz</button>
+
+    </section>
+
+    <!-- Quiz Question Section -->
+    <section class="quiz__questions">
+        <h1 class="header__primary">Qusetion <span id="attampted__q">4</span><span id="total__q">/10</span></h1>
+        <div class="quiz__info">Linux | Easy</div>  
+
+        <div class="group">
+
+            <div class="border"></div>
+            <!-- Timer  -->
+            <div class="time__left">
+                <span id="time__left">15 </span>
+            </div>
+        </div>
+        
+        <!-- Question Text -->
+        <div class="question"></div>
+
+        <!-- Options List -->
+        <ul class="option__list "> 
+            <li class="option" onclick="checkOption(this)"></li>
+            <li class="option" onclick="checkOption(this)"></li>
+            <li class="option" onclick="checkOption(this)"></li>
+            <li class="option" onclick="checkOption(this)"></li>
+        </ul>
+
+        <!-- NEXT Question Button -->
+        <button class="btn__primary hide" id="nextButton">NEXT</button>
+
+    </section>
+
+    <!-- Result Section -->
+    <section class="quiz__result ">
+
+        <h1 class="header__primary">Quiz Result</h1>
+        
+    <div class="result__box">
+        <img src="#" id="scoreImage" alt="img">
+        
+        <div class="result__data">
+            <h3>Your Score is</h3>
+            <div><span id="score_earned">0</span>/<span id="total_score">10</span></div>
+        </div>
+    </div>
+    
+    <!-- EXIT Button -->
+    <button class="btn__primary" id="exitButton">EXIT</button>
+    </section>
+
+    <!-- Linknig Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
